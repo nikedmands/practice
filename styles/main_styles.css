@@ -31,7 +31,8 @@
    /* img style */
    img {
        border-radius: 15px 50px 30px;
-   }
+       margin: 20px;
+   } 
 
    /* hr style */
    hr {
@@ -40,6 +41,15 @@
        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
    }
 
-   #nature_images {
-       padding: 0px; 
-   }
+   /* responsive images size, max width and height attributes, and fade in with the :hover */
+   .responsive_nature_images {
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    opacity: 0.6;
+  }
+
+  .responsive_nature_images:hover {
+    transition: opacity 0.5s ease;
+    opacity: 100%;
+}

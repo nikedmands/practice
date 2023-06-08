@@ -12,6 +12,11 @@
        padding-top: 5px;
    }
 
+   /* set button font color to the same as window background color */
+   a {
+       color: #A7A2A9;
+   }
+
    /* h1 style with 'Poppins' font */
    h1 {
        font-family: Poppins;
@@ -62,4 +67,68 @@
        position: relative;
        animation-name: moving_square;
        animation-duration: 8s;
+   }
+
+   @keyframes moving_square {
+       0% {
+           background-color: #A7A2A9;
+           left: 0px;
+           top: 0px;
+       }
+
+       50% {
+           border-radius: 100%;
+           background-color: #08090A;
+           left: 50%;
+           top: 0;
+       }
+
+       100% {
+           border-radius: 0%;
+           background-color: #A7A2A9;
+           left: 100%;
+           top: 0px;
+       }
+   }
+
+   /* nav buttons */
+   .button {
+       font-family: Roboto Condensed;
+       display: inline-block;
+       border-radius: 4px;
+       background-color: #575A5E;
+       border: none;
+       color: #A7A2A9;
+       text-align: center;
+       font-size: 16px;
+       padding: 10px;
+       width: 150px;
+       transition: all 0.5s;
+       cursor: pointer;
+       margin: 2px;
+   }
+
+   .button span {
+       cursor: pointer;
+       display: inline-block;
+       position: relative;
+       transition: 0.5s;
+   }
+
+   .button span:after {
+       content: '\00bb';
+       position: absolute;
+       opacity: 0;
+       top: 0;
+       right: -20px;
+       transition: 0.5s;
+   }
+
+   .button:hover span {
+       padding-right: 25px;
+   }
+
+   .button:hover span:after {
+       opacity: 1;
+       right: 0;
    }

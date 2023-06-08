@@ -8,6 +8,29 @@
     <title>html</title>
     <!-- call the EXTERNAL stylesheet, from the /styles folder, named 'main_styles' -->
     <link rel="stylesheet" href="styles/main_styles.css">
+
+    <style>
+        @keyframes moving_square {
+            0% {
+                background-color: #A7A2A9;
+                left: 0px;
+                top: 0px;
+            }
+
+            50% {
+                border-radius: 100%;
+                background-color: #08090A;
+                left: 50%;
+                top: 0;
+            }
+
+            100% {
+                border-radius: 0%;
+                background-color: #A7A2A9;
+                left: 100%;
+                top: 0px;
+            }
+    </style>
 </head>
 
 <body>
@@ -24,11 +47,13 @@
     </header>
     <!-- header 1 -->
     <h1>Nik Edmands</h1>
+    <h2>Animated shape called from internal style @keyframe</h2>
+    <div class="moving_square"></div>
     <!-- line break -->
     <br>
     <!-- horizontal rule -->
     <hr>
-    <h2>Every style on this page is called from an EXTERNAL stylesheet (/styles/main_styles.css)</h2>
+    <h2>Everything here onwards is called from an EXTERNAL stylesheet (/styles/main_styles.css)</h2>
     <!-- couple of lorem ipsum paragraphs -->
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium facilisis
         sem, in efficitur enim elementum et. Fusce at imperdiet quam. Aenean risus sem, dapibus eget libero a, ultricies

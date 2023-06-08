@@ -6,8 +6,8 @@
    /* changes to how EVERYTHING in the body section looks */
    body {
        text-align: center;
-       background-color: #FACFAD;
-       color: #20292A;
+       background-color: #F4F7F5;
+       color: #575A5E;
        padding: 200px;
        padding-top: 5px;
    }
@@ -32,7 +32,7 @@
    img {
        border-radius: 15px 50px 30px;
        margin: 20px;
-   } 
+   }
 
    /* hr style */
    hr {
@@ -43,13 +43,23 @@
 
    /* responsive images size, max width and height attributes, and fade in with the :hover */
    .responsive_nature_images {
-    width: 100%;
-    max-width: 450px;
-    height: 300px;
-    opacity: 0.6;
-  }
+       width: 100%;
+       max-width: 450px;
+       height: 300px;
+       opacity: 0.6;
+   }
 
-  .responsive_nature_images:hover {
-    transition: opacity 0.5s ease;
-    opacity: 100%;
-}
+   .responsive_nature_images:hover {
+       transition: opacity 0.5s ease;
+       opacity: 100%;
+   }
+
+   /* moving square animation */
+   .moving_square {
+       width: 20px;
+       height: 20px;
+       background-color: #20292A;
+       position: relative;
+       animation-name: moving_square;
+       animation-duration: 8s;
+   }

@@ -1,0 +1,41 @@
+   /* import Poppins font from google fonts. IMPORTED stylesheet */
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+   /* changes to how EVERYTHING in the body section looks */
+   body {
+       text-align: center;
+       background-color: #FACFAD;
+       color: #20292A;
+       padding: 200px;
+       padding-top: 5px;
+   }
+
+   /* h1 style with 'Poppins' font */
+   h1 {
+       font-family: Poppins;
+       font-size: 60px;
+   }
+
+   /* h2 style with 'Roboto Condensed' font */
+   h2 {
+       font-family: Roboto Condensed;
+   }
+
+   /* p styles with 'Space Grotesk' font */
+   p {
+       font-family: Space Grotesk;
+   }
+
+   /* img style */
+   img {
+       border-radius: 15px 50px 30px;
+   }
+
+   /* hr style */
+   hr {
+       border: 0;
+       height: 1px;
+       background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+   }

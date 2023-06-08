@@ -28,6 +28,10 @@
        font-family: Roboto Condensed;
    }
 
+   h3 {
+    font-family: Poppins;
+   }
+
    /* p styles with 'Space Grotesk' font */
    p {
        font-family: Space Grotesk;
@@ -134,3 +138,16 @@
    }
 
    /* list styles */
+   ul, li
+   {
+    font-family: Space Grotesk;
+     display: inline;
+   }
+   
+   li
+   {
+     border: solid 1px #222823;
+     padding: 5px;
+     margin: 5px;
+     background-color: #F4F7F5;
+   }

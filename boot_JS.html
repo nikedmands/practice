@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap & JS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/bootstrap_page.css">
-    <link rel="stylesheet" href="styles/main_styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- My Style Sheet -->
+  <link href="styles/bootstrap_page.css" rel="stylesheet" type="text/css" />
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+  <!-- Navbar -->
+  <!-- first nav class points to external stylesheet -->
+  <nav class="navbar navbar-default" style="background-color: #EEF0EB; height: 80px;">
+    <!-- all styles are imported -->
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="home.html">
+          <img src="images/NE_logo (1).png" width="50" height="50">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <!-- navbar-nav is external, the rest imported -->
+        <ul class="nav navbar-nav navbar-right" style="text-align:center; margin-top: 16px; font-size: 25px;">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="html.html">Basic HTML</a></li>
+          <li><a href="html+css.html">HTML & CSS</a></li>
+          <li class="active"><a href="boot_JS.html">Bootstrap & JS</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="font-family: Dongle; color: #153243; text-align: center;">
+    <div class="page-header">
+      <h1 style="font-size: 80px;">Made using HTML, CSS, Bootstrap and JavaScript</h1>      
+    </div>
+    <p style="padding: 0; font-size: 30px;">This is a responsive webpage. Meaning that it will automatically adjust for different screen sizes and viewports. Change your window size to see how it 'reponds'.</p>      
+  </div>
+
+
+
+<br><br>
+
+
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-left: 19%; padding-right: 19%;" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+  
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/carousel/1.jpg" alt="Chania">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="images/carousel/2.jpg" alt="Chicago">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="images/carousel/3.jpg" alt="New York">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+  
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
 
 
@@ -19,16 +108,23 @@
 
 
 
-    <!-- bootstraps JS file script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <footer class="container-fluid bg-4"
+    style="font-family: Arial, Helvetica, sans-serif; color: #153243; font-size: 15px;">
+    <p style="float: right;"><a href="#">Back to top</a></p>
+    <p style="float: left;">&copy; Nik 2023 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-</html>
 
-</body>
 </html>
-
 <!-- #B4B8AB - dark grey
-    # 153244 - darkest blue
+    #153244 - darkest blue
     #284B62 - navy blue
     #F4F0E0 - off white
-    # EEF0EB - light grey -->
+    #EEF0EB - light grey -->
+
+
+<!--          
+      
